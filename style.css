@@ -1,0 +1,50 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#cenario {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease; /* Adiciona uma transição suave para a mudança de imagem */
+}
+
+#botaoMudarCenario {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer;
+    z-index: 999; /* Garante que o botão esteja acima do cenário */
+}
+
+#botaoMudarCenario:hover {
+    background-color: #0056b3; /* Cor de fundo do botão quando o mouse passa por cima */
+}
+
+#botaoMudarCenario:focus {
+    outline: none; /* Removendo a borda de foco padrão */
+}
+   
+.cenario1 {
+    background-image: url('cenario1.jpg'); /* Imagem de fundo do cenário 1 */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh; /* Tamanho igual à altura da janela de visualização */
+    transition: background-image 0.5s ease; /* Adiciona uma transição suave para a mudança de imagem */
+}
+
+.cenario2 {
+    background-image: url('cenario2.jpg'); /* Imagem de fundo do cenário 2 */
+    background-size: cover;
+    background-position: center;
+}
